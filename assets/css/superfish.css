@@ -1,0 +1,112 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+	z-index:		100000;
+	text-transform:	uppercase;
+}
+.sf-menu ul {
+	position:		absolute;
+	z-index:		100000;
+	top:			-999em;
+	border-top:		0;
+	border-bottom:	2px solid #F0F0F0;
+	border-right:	2px solid #F0F0F0;
+	border-left:	2px solid #F0F0F0;
+	border-top:		2px solid #F0F0F0;
+	margin-bottom:	10px;
+}
+.sf-menu ul li { 
+	background:		#fff;
+	border-top:		0;
+	border-bottom:	0; 
+	padding:		0 12px;
+	width:			auto;
+}
+#main > header nav ul ul li {
+	display:block;
+	float:none;
+	clear:both;
+}
+#main > header nav ul ul li a {
+	background-color:#fff;
+	color:#8e8b87;
+	display:block;
+	font:normal 0.85em 'museo-sans', arial, sans-serif;
+	height:16px;
+	padding:4px 6px 4px 6px;
+	border-bottom:1px solid #F0F0F0;
+	white-space:nowrap;
+	float:none;
+	clear:both;
+
+
+}
+.sf-menu ul li a:hover {
+	/* background-color:#dc4a26; */
+	/* color:#fff; */
+}
+.sf-menu ul li {
+	/* width:			100%; */
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li:hover > a {
+	background-color:#dc4a26;
+	position:relative;
+	left:0;
+	top:0;
+	color:#fff;
+}
+.sf-menu li {
+	zoom:			1;
+	display:		inline-block;
+	*display:		inline;
+	position:		relative;
+	height:			100%;
+	top:			0;
+	left:			0; 
+	margin-left:	3px;
+}
+.no-multiplebgs .sf-menu li {
+	float:			left;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			33px; /* match top ul list item height */
+	z-index:		9999;
+	padding-top:	5px;
+	padding-bottom:	10px;
+	background:		#fff;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			-999em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+.sf-sub-indicator { display:none; }
+
+

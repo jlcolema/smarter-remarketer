@@ -1,0 +1,139 @@
+/*Class to set the width for the whole Carousel. You can set the width and height as you want */
+.widget {
+	width:864px;
+	margin:auto;
+	position:absolute;
+	top:-9999em;
+	left:0;
+	margin-top:50px;
+}
+/*Class to set the styling option for the previous button on the Carousel */
+
+.widget a.prev {
+	position:absolute; left:0; top:11px; background:url(../images/sprite_plus_minus.png) 0 -51px no-repeat; height:17px; width:18px; display:block;
+}
+.widget a.prev:hover {
+	background-position:0 -34px;
+}
+/*Class to set the styling option for the next button on the Carousel */
+
+.widget a.next {
+	position:absolute; right:0; top:11px; background:url(../images/sprite_plus_minus.png) 0 -17px no-repeat; height:17px; width:18px; display:block;
+}
+.widget a.next:hover {
+	background-position:0 0;
+}
+/*Class to set the styling option for the scroller part of the Carousel */
+
+.widget_style {
+	text-align:left;
+	padding:0px 0px 0px 0px;
+	width:715px !important;
+	margin:auto;
+}
+.widget_style ul {
+	margin:0;
+	padding:0;
+}
+/*Class to set the image background and the size of it, do note that it’s not the size of the scrolling images, it sets the size of the background image that I’ve used for every actual image that will be scrolling*/
+
+.widget_style li {
+	height:40px;
+	width:158px;
+	list-style:none;
+	margin:0;
+	padding:0 10px;
+	border-right:1px solid #d8d8d8;
+}
+/*This here actually sets the size of the scrolling images */
+
+.widget_style img {
+	width:158px;
+	height:40px;
+	max-height:100%;
+	max-width:100%;
+	border:0;
+}
+/*_____________________________________________ Start - Projects - jCarouselLiteDemo _____________________________________________*/
+
+#jCarouselLiteDemo .slideshow {
+	padding: 10px 0 0 0;
+	margin: 0 0 20px 10px;
+	position: relative;
+}
+#jCarouselLiteDemo .digg {
+	position: absolute;
+	left: 610px;
+	top: 110px;
+}
+#jCarouselLiteDemo .main {
+	margin-left: 40px;
+}
+#jCarouselLiteDemo .demo em {
+	color: #FF3300;
+	font-weight: bold;
+	font-size: 60%;
+	font-style: normal;
+}
+#jCarouselLiteDemo .slideshow button { /*Don't remove this. we still use this for individual demos. only the front pages use images as of now*/
+	float: left;
+}
+#jCarouselLiteDemo .slideshow a.prev, #jCarouselLiteDemo .slideshow a.next {
+	display: block;
+	float: left;
+	width: 30px;
+	height: 143px;
+	text-decoration: none;
+	background: url("/image/imageNavLeft.gif") left 60px no-repeat;
+}
+#jCarouselLiteDemo .slideshow a.next {
+	background: url("/image/imageNavRight.gif") right 60px no-repeat;
+}
+#jCarouselLiteDemo .slideshow a.next:hover {
+	background-image: url("/image/imageNavRightHover.gif");
+}
+#jCarouselLiteDemo .slideshow a.prev:hover {
+	background-image: url("/image/imageNavLeftHover.gif");
+}
+#jCarouselLiteDemo .slideshow a:hover, #jCarouselLiteDemo .slideshow a:active {
+	border: none;
+	outline: none;
+}
+#jCarouselLiteDemo .slideshow .jCarouselLite {
+	border: 1px solid black;
+	float: left;
+	background-color: #dfdfdf;
+	/* Needed for rendering without flicker */
+        position: relative;
+	visibility: hidden;
+	left: -5000px;
+}
+#jCarouselLiteDemo .slideshow ul {
+	margin: 0;
+}
+#jCarouselLiteDemo .slideshow li img,  #jCarouselLiteDemo .slideshow li p {
+	background-color: #fff;
+	width: 150px;
+	height: 118px;
+	margin: 10px;
+}
+#jCarouselLiteDemo .widget img {
+	cursor: pointer;
+}
+#jCarouselLiteDemo .mid {
+	margin-left: 80px;
+	width: 400px;
+	height: 300px;
+}
+#jCarouselLiteDemo .vertical {
+	margin-left: 170px;
+}
+#jCarouselLiteDemo .vertical .jCarouselLite {   /* so that in IE 6, the carousel div doesnt expand to fill the space */
+	width: 170px;
+}
+#jCarouselLiteDemo .imageSlider li img,  #jCarouselLiteDemo .imageSlider li p,  #jCarouselLiteDemo .imageSliderExt li img,  #jCarouselLiteDemo .imageSliderExt li p {
+	width: 400px;
+	height: 300px;
+}
+            
+/*_____________________________________________ End - Projects - jCarouselLiteDemo _____________________________________________*/
